@@ -1,14 +1,12 @@
 # Coding challenge
 
 ## Automation
----
 There are two CI-Solutions which would enhance our Lambda function.
 - The first one would be a pipeline to automate the infractructure deployment. 
 - The second could be a pull request pipeline running quality checks like validatig syntax and running "checkov" to validate our code and increasing the overall code quality. 
 
 
 ## Versioning
----
 ### Usage of semantic versioning
 Using the guidelines of a semantic version number. In summary, this means that with a version number of the form MAJOR.MINOR.PATCH
 
@@ -20,7 +18,6 @@ For a better operational expirience, all changes should be documented in a ***ch
 (Breaking Changes, Notes, Features, Enhancements, Bug Fixes)
 
 ## Known Issues
----
 - Lambda is creating its own Log group, this results in two issues: 
     - In case of a terraform destroy the log group will not be deleted
     - The Log group cannot be configured by terraform and logs will not be kept over time because there is no retention time configured by default. 
